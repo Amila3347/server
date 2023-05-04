@@ -12,7 +12,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const app = express()
-app.use(cors({origin: 'https://tax-advisor-chat-bot.vercel.app/'}));
+app.use(cors({Access-Control-Allow-Origin:: 'https://tax-advisor-chat-bot.vercel.app/'}));
 app.use(express.json())
 
 app.get('/', async (req, res) => {
