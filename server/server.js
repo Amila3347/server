@@ -12,7 +12,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const app = express()
-app.use(cors({Access-Control-Allow-Origin: *}));
+app.use(cors({"Access-Control-Allow-Origin: *"}));
 app.use(express.json())
 
 app.get('/', async (req, res) => {
